@@ -5,11 +5,11 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract ENTR is ERC20Burnable, ERC20Permit, Ownable {
+contract LEAG is ERC20Burnable, ERC20Permit, Ownable {
 
-    uint256 private constant SUPPLY = 100_000_000 * 10**18;
+    uint256 private constant SUPPLY = 1_000_000_000 * 10**18;
 
-    constructor() ERC20("ENTER Governance Token", "ENTR") ERC20Permit("ENTR") {
+    constructor() ERC20("LeagueDAO Governance Token", "LEAG") ERC20Permit("LEAG") {
         _mint(msg.sender, SUPPLY);
     }
 
